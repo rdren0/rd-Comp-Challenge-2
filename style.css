@@ -7,6 +7,7 @@
   width: 100%;
   grid-template-columns: 1fr 5fr 2fr;
   grid-template-rows: 70px 200px 350px 850px;
+  grid-template-areas: "nav search search" "nav box3 box3" "nav box4 box4" "nav box5 box6"
 }
 
 .nav-bar-container{
@@ -17,8 +18,9 @@
 }
 
 .box1 {
-  grid-row: 1 / span 4;
+  /*grid-row: 1 / span 4;*/
   background-color: #2F4858;
+  grid-area: nav;
 }
 
 .boxa{
@@ -204,7 +206,9 @@ label h3{
 
 .box2 {
   background-color: #ffffff;
-  grid-column: 2 / -1;
+  /*grid-column: 2 / -1;*/
+  grid-area: search;
+
 }
 
 .search-bar-container{
@@ -274,18 +278,32 @@ label h3{
 .box3 {
   background-color: #ffffff;
   border: 1px solid black;
-  grid-column: 2 / -1;
+  /*grid-column: 2 / -1;*/
+    grid-area: box3;
+}
+
+.box3container{
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+.box3a{
+background-color: cyan;
+}
+
+.box3b{
+background-color: red;
 }
 
 .box4 {
   background-color: #86BBD8;
-  grid-column: 2 / -1;
+  /*grid-column: 2 / -1;*/
   border: 1px solid black;
+  grid-area: box4;
 }
 
 .box4container{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 4fr 3fr;
   grid-template-rows: 1fr 4fr 2fr;
 
 }
@@ -308,7 +326,6 @@ label h3{
 
 .single-chart {
   width: 33%;
-  justify-content: space-around ;
 }
 
 .circular-chart {
@@ -361,31 +378,41 @@ label h3{
   grid-row: 3;
 
 }
-
 .box4d{
-  grid-row: span 3;
-  background-color: #86BBD8;
+
 }
-.box4d img{
+.box4e{
+  grid-row: 2;
+  background-color: #86BBD8;
+  place-self: center;
+}
+.box4e img{
   height: 100%;
   width: 100%;
+  object-fit: contain;
 }
 
+.box4f{
+  grid-row: 3;
+}
 .box5 {
   background-color: #86BBD8;
-  grid-row: 4 / span 2;
+ /* grid-row: 4 / span 2;*/
   border: 1px solid black;
+  grid-area: box5;
+
 }
 
 .box5container{
   display: grid;
   grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   padding: 30px;
+  min-height: 500px;
+  min-width: 500px;
 }
 
 .box5a{
   background-color: #336699;
-
 
 }
 .box5a h2{
@@ -399,59 +426,221 @@ label h3{
 
 .box5b{
   border: 1px solid black;
-  background-color: #FFFFFF
+  background-color: #FFFFFF 
+}
 
-  
+.box5bcontainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "box5b1 box5b1 box5b2 box5b2 box5b2";
+}
+
+.box5b1{
+  grid-area: box5b1;
+  place-self: center start;
+  padding-left: 10px;
+}
+
+.box5b2{
+  grid-area: box5b2;
+  place-self: center start;
 }
 
 .box5c{
   border: 1px solid black;
   background-color: #FFFFFF
+}
 
-  
+.box5ccontainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "box5c1 box5c1 box5c2 box5c2 box5c2";
+}
+
+.box5c1{
+  grid-area: box5c1;
+  place-self: center start;
+    padding-left: 10px;
+
+
+}
+.box5c2{
+  grid-area: box5c2;
+  place-self: center start;
+
 }
 
 .box5d{
   border: 1px solid black;
   background-color: #FFFFFF
-
-  
 }
+
+.box5dcontainer{
+display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "box5d1 box5d1 box5d2 box5d2 box5d2";
+}
+
+.box5d1{
+ grid-area: box5d1;
+  place-self: center start;
+    padding-left: 10px;
+
+
+}
+
+.box5d2{
+grid-area: box5d2;
+  place-self: center start;
+}
+
 .box5e{
   border: 1px solid black;
-  background-color: #FFFFFF
-
-  
+  background-color: #FFFFFF 
 }
+
+.box5econtainer{
+display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "box5e1 box5e1 box5e2 box5e2 box5e2";
+}
+
+.box5e1{
+grid-area: box5e1;
+  place-self: center start;
+    padding-left: 10px;
+
+}
+
+.box5e2{
+grid-area: box5e2;
+  place-self: center start;
+}
+
 .box5f{
   border: 1px solid black;
   background-color: #FFFFFF
-
-  
 }
+
+.box5fcontainer{
+display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "box5f1 box5f1 box5f2 box5f2 box5f2";
+}
+
+.box5f1{
+grid-area: box5f1;
+  place-self: center start;
+    padding-left: 10px;
+
+}
+
+.box5f2{
+  grid-area: box5f2;
+  place-self: center start;
+}
+
 .box5g{
   border: 1px solid black;
-  background-color: #FFFFFF
-
-  
+  background-color: #FFFFFF 
 }
+
+.box5gcontainer{
+display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "box5g1 box5g1 box5g2 box5g2 box5g2";
+}
+
+.box5g1{
+grid-area: box5g1;
+  place-self: center start;
+    padding-left: 10px;
+
+}
+
+.box5g2{
+  grid-area: box5g2;
+  place-self: center start;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+
+}
+
 .box5h{
   border: 1px solid black;
-  background-color: #FFFFFF
-
-  
+  background-color: #FFFFFF  
 }
+
+.box5hcontainer{
+display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "box5h1 box5h1 box5h1 box5h3 box5h2 box5h2 box5h2";
+}
+
+.box5hcontainer img{
+  height: 50px;
+  border-radius: 50%;
+  place-self: center start;
+  margin-left: -20px;
+  margin-top: 15px;
+}
+
+.box5h1{
+grid-area: box5h1;
+  place-self: center start;
+    padding-left: 10px;
+
+}
+
+.box5h2{
+grid-area: box5h2;
+  place-self: center start;
+  margin-left: -20px;
+}
+
+.boc5h3{
+  grid-area: box5h3;
+  place-self: center start;
+}
+
 .box5i{
   border: 1px solid black;
-  background-color: #FFFFFF
+  background-color: #FFFFFF 
+}
 
-  
+.box5icontainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "box5i1 box5i1 box5i2 box5i2 box5i2";
+}
+
+.box5i1{
+ grid-area: box5i1;
+  place-self: center start;
+    padding-left: 10px;
+
+}
+
+.box5i2{
+ grid-area: box5i2;
+  place-self: center start;
 }
 
 .box6 {
   background-color: #edf2f6;
   border: 1px solid black;
   background-color: #AEEAFC;
+    grid-area: box6;
+
 }
 
 
@@ -459,11 +648,23 @@ label h3{
 }
 .box6container{
   display: grid;
-  grid-template-rows: 250px 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
 }
 .box6acontainer{
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
+}
+
+.social-media{
+   min-width: 200px;
+  max-width: 200px;
+  margin: 15px 20px 15px 20px;
+  padding:5px 20px 10px 20px;
+  border: 1px solid black;
+  height: 25px;
+  font-size: 15px;
+  place-self: auto center;
+
 }
 
 .social-media ul{
@@ -474,45 +675,35 @@ label h3{
   padding-left: 5px;
   padding-top: 20px;
   color: #2F4858 ;
+  max-width: 200px;
 }
 
 .social1{
-  height: 25px;
-  font-size: 15px;
   background-color: #4a6dc1;
-  margin: 15px 20px 15px 20px;
-  padding:5px 20px 10px 20px;
-  border: 1px solid black; 
-
 }
 .social2{
-  height: 25px;
-  font-size: 15px;
-  background-color: #01aaef;
-  margin: 5px 20px 10px 20px;
-  padding:5px 20px 10px 20px;
-  border: 1px solid black;  
+  background-color: #01aaef;  
 }
 .social3{
-  height: 25px;
-  font-size: 15px;
-  background-color: #DCD6F7;
-  margin: 5px 20px 15px 20px;
-  padding:5px 20px 10px 20px;
-  border: 1px solid black;  
+  background-color: #DCD6F7;  
 }
 
 .box6b{
   border: 2px solid gainsboro;
+  padding-left: 10px;
 }
 .box6bcontainer{
 
+}
+
+.box6b h4{
+  margin-top: -10px;
 }
 .box6 button{
   border-radius: 0px;
   border: none;
   height: 48px;
-  width: 60px;
+  width: 50px;
   background-color: #47b9ba;
   color: #FFFFFF;
   margin-left: 0px;
@@ -523,15 +714,22 @@ label h3{
   height: 40px;
   width: 200px;
   margin-bottom: 20px;
-  margin-left: 20px;
 }
+
 
 .box6c{
   border: 2px solid gainsboro;
+  padding-left: 10px;
 }
 
 .box6d{
-  border: 2px solid gainsboro;
+  border: 2px solid gainsboro;'
+  height: 100%;
+   padding-left: 10px;
+}
+
+.box6d input{
+  place-self: center start;
 }
 h3{
   margin-left: 25px;
@@ -539,6 +737,25 @@ h3{
 }
 
 
+@media screen and (max-width: 500px) {
+  .container{
+    display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(200px, auto);
+  grid-template-areas: "." "search" "box3" "box4" "box5" "box6";
+  }
+  .nav-bar-container{
+    display: none;
+  }
+
+  .box5container{
+    grid-template-rows: minmax(80px,100px);
+  }
+  .box5a{
+    height: 1fr;
+  }
 
 
 
