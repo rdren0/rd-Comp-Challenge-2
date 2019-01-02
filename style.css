@@ -303,7 +303,8 @@ hr{
 
 .box3 {
   background-color: #FFFFFF;
-    grid-area: box3;
+  grid-area: box3;
+  border-top: 1px solid gainsboro;
 }
 
 .box3container{
@@ -719,7 +720,6 @@ place-self: center start;
   background-color: #d3dded;
   grid-area: box6;
   min-width: 400px;
-  max-width: 100%
 }
 
 .box6container{
@@ -741,6 +741,7 @@ place-self: center start;
   height: 25px;
   font-size: 15px;
   place-self: center;
+  margin-bottom: 10px;
 }
 
 .social-media ul{
@@ -774,6 +775,7 @@ place-self: center start;
   border-bottom: 2px solid grey;
   margin-right: 10px;
   margin-left: 30px;
+  padding-bottom: 10px;
 }
 
 .box6b h4{
