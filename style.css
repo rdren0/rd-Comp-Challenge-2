@@ -1,26 +1,26 @@
 
 h1{
   font-size: 18px;
-  padding-left: 15px;
   padding-bottom: 5px;
+  padding-left: 15px;
 }
 
 h3{
-  font-size: 14px;
   color: #89BED9;
-    margin-left: 25px;
+  font-size: 14px;
+  margin-left: 25px;
   margin-top: 3px;
 }
 
 h4{
+  font-size: 14px;
   margin-bottom: -5px;
   padding-bottom: 10px;
-  font-size: 14px;
 }
 
 h4:hover{
-border-bottom: 2px solid black;
-margin-bottom: -19px;
+  border-bottom: 2px solid black;
+  margin-bottom: -19px;
 }
 
 h6{
@@ -33,8 +33,8 @@ ul img{
 
 ul{
   list-style: none;
-  text-align: left;
   padding-left: 20px;
+  text-align: left;
 }
 
 li{
@@ -46,16 +46,16 @@ li h3{
 }
 
 input{
-  width: 100%;
   border-bottom: none;
   padding-right: 0px;
+  width: 100%;
 }
 
 label h3{
   display: inline;
+  font-size: 12px;
   margin-left: 5px;
   padding-bottom: 3px;
-  font-size: 12px;
 }
 
 hr{
@@ -65,20 +65,20 @@ hr{
 
 .container {
   display: grid;
-  height: 100%;
-  width: 100%;
+  grid-template-areas: "nav search search" "nav box3 box3" "nav box4 box4" "nav box5 box6"
   grid-template-columns: 180px 6fr 3fr;
   grid-template-rows: 70px 200px 500px 750px;
-  grid-template-areas: "nav search search" "nav box3 box3" "nav box4 box4" "nav box5 box6"
+  height: 100%;
+  width: 100%;
 }
 
 .nav-bar-container{
-  display: grid;
-  height: 100%;
-  grid-template-rows: 1fr 2fr 2fr 5fr;
   box-sizing: border-box;
-  min-width: 155px;
+  display: grid;
   grid-template-areas: "boxa" "boxb" "boxc" "boxd";
+  grid-template-rows: 1fr 2fr 2fr 5fr;
+  height: 100%;
+  min-width: 155px;
 }
 
 .box1 {
@@ -87,19 +87,19 @@ hr{
 }
 
 .boxa{
-  margin: auto;
   grid-area: boxa;
+  margin: auto;
 }
 .boxa h3:hover{
   color: cyan;
 }
 
 .bowtie-image{
-  height: 100px;
-  width: 100px;
   border-radius: 100%;
-  margin-top: 10px;
   border: 0;
+  height: 100px;
+  margin-top: 10px;
+  width: 100px;
 }
 .boxb{
   border-top: 1px solid black;
@@ -144,8 +144,8 @@ hr{
 }
 
 .categoriesboxd{
-  padding-top: 15px;
   margin-left: 15px;
+  padding-top: 15px;
 }
 
 .yellow-box {
@@ -153,13 +153,13 @@ hr{
 }
 
 .yellow-box .square {
-  width: 15px;
-  height: 15px;
-  display: inline-block;
   background-color: #f6ff02;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 15px;
   margin-left: 15px;
   margin-top: 10px;
-  box-sizing: border-box;
+  width: 15px;
 }
 
 .yellow-box input[type="checkbox"] {
@@ -176,13 +176,13 @@ hr{
 }
 
 .blue-box .square {
-  width: 15px;
-  height: 15px;
-  display: inline-block;
   background-color: #4f5df7;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 15px;
   margin-left: 15px;
   margin-top: 10px;
-  box-sizing: border-box;
+  width: 15px;
 }
 
 .blue-box input[type="checkbox"] {
@@ -199,13 +199,13 @@ hr{
 }
 
 .red-box .square {
-  width: 15px;
-  height: 15px;
-  display: inline-block;
   background-color: #e04343;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 15px;
   margin-left: 15px;
   margin-top: 10px;
-  box-sizing: border-box;
+  width: 15px;
 }
 
 .red-box input[type="checkbox"] {
@@ -222,13 +222,13 @@ hr{
 }
 
 .green-box .square {
-  width: 15px;
-  height: 15px;
-  display: inline-block;
   background-color: #2ecc31;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 15px;
   margin-left: 15px;
   margin-top: 10px;
-  box-sizing: border-box;
+  width: 15px;
 }
 
 .green-box input[type="checkbox"] {
@@ -253,11 +253,11 @@ hr{
 }
 .search-bar-container img{
   height: 34px;
-  width: 34px;
-  padding-right: 18px;
-  padding-left: 18px;
-  margin-top: 18px;
   margin-bottom: 18px;
+  margin-top: 18px;
+  padding-left: 18px;
+  padding-right: 18px;
+  width: 34px;
 
 }
 .search-box1{
@@ -303,7 +303,7 @@ hr{
 
 .box3 {
   background-color: #FFFFFF;
-    grid-area: box3;
+  grid-area: box3;
 }
 
 .box3container{
@@ -316,9 +316,9 @@ hr{
 }
 
 .box3a button{
-  place-self: center;
   background-color: #FFFFFF;
   border-radius: 50%; 
+  place-self: center;
 }
 
 .box3a img{
@@ -347,11 +347,11 @@ hr{
 }
 
 .box4 button{
-  place-self: center normal;
-  border-radius: 12px;
-  border-collapse: 1px solid gainsboro;
-  font-size: 20px;
   background-color: #89BED9;
+  border-collapse: 1px solid gainsboro;
+  border-radius: 12px;
+  font-size: 20px;
+  place-self: center normal;
 }
 
 .box4container{
@@ -375,8 +375,8 @@ hr{
 }
 
 .box4b{
-  grid-row: 2;
   background-color: #d3dded;
+  grid-row: 2;
   place-self: center auto;
 }
 
@@ -397,8 +397,8 @@ hr{
 .circular-chart {
   display: block;
   margin: 10px auto;
-  max-width: 80%;
   max-height: 180px;
+  max-width: 80%;
 }
 
 .circle-bg {
@@ -408,10 +408,10 @@ hr{
 }
 
 .circle {
-  fill: none;
-  stroke-width: 2.8;
-  stroke-linecap: round;
   animation: progress 3s ease-out forwards;
+  fill: none;
+  stroke-linecap: round;
+  stroke-width: 2.8;
 }
 
 @keyframes progress {
@@ -464,8 +464,8 @@ hr{
 }
 
 .box4g{
-  grid-row: 4;
   grid-column: 1 / span 2;
+  grid-row: 4;
   height: 40px;
 }
 
@@ -476,7 +476,6 @@ hr{
 
 .box5 {
   background-color: #d3dded;
- /* grid-row: 4 / span 2;*/
   grid-area: box5;
 
 }
@@ -484,10 +483,9 @@ hr{
 .box5container{
   display: grid;
   grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  padding: 30px;
   min-height: 500px;
   min-width: 400px;
-
+  padding: 30px;
 }
 
 .box5zcontainer{
@@ -508,9 +506,9 @@ hr{
 
 }
 .box5a h2{
-  padding-right: 10px;
   color: #72ABD4;
   font-size: 20px;
+  padding-right: 10px;
 }
 .box5a img{
   height: 20px;
@@ -523,15 +521,15 @@ hr{
 .box5bcontainer{
   border-bottom: 1px solid gainsboro;
   display: grid;
+  grid-template-areas: "box5b1 box5b1 box5b2 box5b2 box5b2";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "box5b1 box5b1 box5b2 box5b2 box5b2";
 }
 
 .box5b1{
   grid-area: box5b1;
-  place-self: center start;
   padding-left: 10px;
+  place-self: center start;
 }
 
 .box5b2{
@@ -544,17 +542,17 @@ hr{
 }
 
 .box5ccontainer{
-  display: grid;
   border-bottom: 1px solid gainsboro;
+  display: grid;
+  grid-template-areas: "box5c1 box5c1 box5c2 box5c2 box5c2";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "box5c1 box5c1 box5c2 box5c2 box5c2";
 }
 
 .box5c1{
   grid-area: box5c1;
+  padding-left: 10px;
   place-self: center start;
-    padding-left: 10px;
 }
 
 .box5c2{
@@ -567,17 +565,17 @@ hr{
 }
 
 .box5dcontainer{
-  display: grid;
   border-bottom: 1px solid gainsboro;
+  display: grid;
+  grid-template-areas: "box5d1 box5d1 box5d2 box5d2 box5d2";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "box5d1 box5d1 box5d2 box5d2 box5d2";
 }
 
 .box5d1{
   grid-area: box5d1;
-  place-self: center start;
   padding-left: 10px;
+  place-self: center start;
 }
 
 .box5d2{
@@ -590,17 +588,17 @@ hr{
 }
 
 .box5econtainer{
-  display: grid;
   border-bottom: 1px solid gainsboro;
+  display: grid;
+  grid-template-areas: "box5e1 box5e1 box5e2 box5e2 box5e2";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "box5e1 box5e1 box5e2 box5e2 box5e2";
 }
 
 .box5e1{
   grid-area: box5e1;
-  place-self: center start;
   padding-left: 10px;
+  place-self: center start;
 }
 
 .box5e2{
@@ -613,17 +611,17 @@ hr{
 }
 
 .box5fcontainer{
-  display: grid;
   border-bottom: 1px solid gainsboro;
+  display: grid;
+  grid-template-areas: "box5f1 box5f1 box5f2 box5f2 box5f2";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "box5f1 box5f1 box5f2 box5f2 box5f2";
 }
 
 .box5f1{
   grid-area: box5f1;
-  place-self: center start;
   padding-left: 10px;
+  place-self: center start;
 }
 
 .box5f2{
@@ -636,25 +634,25 @@ hr{
 }
 
 .box5gcontainer{
-  display: grid;
   border-bottom: 1px solid gainsboro;
+  display: grid;
+  grid-template-areas: "box5g1 box5g1 box5g2 box5g2 box5g2";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "box5g1 box5g1 box5g2 box5g2 box5g2";
 }
 
 .box5g1{
-grid-area: box5g1;
+  grid-area: box5g1;
+  padding-left: 10px;
   place-self: center start;
-    padding-left: 10px;
 }
 
 .box5g2{
   grid-area: box5g2;
-  place-self: center start;
-  padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 10px;
+  padding-top: 10px;
+  place-self: center start;
 }
 
 .box5h{
@@ -662,32 +660,32 @@ grid-area: box5g1;
 }
 
 .box5hcontainer{
-  display: grid;
-  padding: 10px 0px 10px 0px;
   border-bottom: 1px solid gainsboro;
+  display: grid;
+  grid-template-areas: "box5h1 box5h1 box5h1 box5h3 box5h2 box5h2 box5h2";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "box5h1 box5h1 box5h1 box5h3 box5h2 box5h2 box5h2";
+  padding: 10px 0px 10px 0px;
 }
 
 .box5hcontainer img{
-  height: 50px;
   border-radius: 50%;
-  place-self: center start;
+  height: 50px;
   margin-left: -20px;
   margin-top: 5px;
+  place-self: center start;
 }
 
 .box5h1{
   grid-area: box5h1;
-  place-self: center start;
   padding-left: 10px;
+  place-self: center start;
 }
 
 .box5h2{
   grid-area: box5h2;
-  place-self: center start;
   margin-left: -20px;
+  place-self: center start;
 }
 
 .boc5h3{
@@ -701,27 +699,27 @@ grid-area: box5g1;
 
 .box5icontainer{
   display: grid;
+  grid-template-areas: "box5i1 box5i1 box5i2 box5i2 box5i2";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "box5i1 box5i1 box5i2 box5i2 box5i2";
 }
 
 .box5i1{
   grid-area: box5i1;
-  place-self: center start;
   padding-left: 10px;
+  place-self: center start;
 }
 
 .box5i2{
- grid-area: box5i2;
-place-self: center start;
+  grid-area: box5i2;
+  place-self: center start;
 }
 
 .box6 {
   background-color: #d3dded;
   grid-area: box6;
-  min-width: 400px;
   max-width: 100%
+  min-width: 400px;
 }
 
 .box6container{
@@ -735,13 +733,13 @@ place-self: center start;
 }
 
 .social-media{
-  min-width: 280px;
-  max-width: 280px;
-  padding:5px 20px 10px 20px;
-  margin-top: 10px;
   border: 1px solid black;
-  height: 25px;
   font-size: 15px;
+  height: 25px;
+  margin-top: 10px;
+  max-width: 280px;
+  min-width: 280px;
+  padding:5px 20px 10px 20px;
   place-self: center;
 }
 
@@ -751,9 +749,9 @@ place-self: center start;
 }
 
 .social-media ul h3{
-  padding-top: 20px;
   color: #2F4858 ;
   max-width: 200px;
+  padding-top: 20px;
 }
 
 .social1{
@@ -774,8 +772,8 @@ place-self: center start;
 
 .b6bcontainer{
   border-bottom: 2px solid grey;
-  margin-right: 10px;
   margin-left: 30px;
+  margin-right: 10px;
 }
 
 .box6b h4{
@@ -783,18 +781,18 @@ place-self: center start;
 }
 
 .box6 button{
+  background-color: #47b9ba;
   border-radius: 0px;
   border: none;
-  height: 48px;
-  width: 50px;
-  background-color: #47b9ba;
   color: #FFFFFF;
+  height: 48px;
   margin-left: 0px;
+  width: 50px;
 }
 
 .box6 input{
-  margin-right: none;
   height: 40px;
+  margin-right: none;
   width: 200px;
 }
 
@@ -804,8 +802,8 @@ place-self: center start;
 
 .box6d{
   height: 100%;
-  padding-left: 10px;
   margin-left: 30px;
+  padding-left: 10px;
 }
 
 .box6d input{
@@ -835,8 +833,8 @@ place-self: center start;
   }
 
   .box4e{
-    place-self: center;
     margin-top: -25px;
+    place-self: center;
   }
 
   .box4d{
@@ -846,23 +844,23 @@ place-self: center start;
   .circular-chart {
     display: block;
     margin: 10px auto;
-    max-width: 80%;
     max-height: 100px;
+    max-width: 80%;
   }
 
   .box6container{
-    grid-row: 5;
     grid-column: 1 /span 3;
+    grid-row: 5;
   }
 
   .box5container{
-    grid-row: 4;
     grid-column: 2 /span 3;
+    grid-row: 4;
   }
 
   .box4e img{
-  height: 200px;
-  width: 400px;
+    height: 200px;
+    width: 400px;
   }
   
 }
@@ -870,18 +868,18 @@ place-self: center start;
 @media screen and (max-width: 500px) {
   .container{
     display: grid;
-    height: 100%;
-    width: 100%;
+    grid-template-areas: "nav" "search" "box3" "box4" "box5" "box6";
     grid-template-columns: 1fr;
     grid-template-rows: minmax(200px, auto);
-    grid-template-areas: "nav" "search" "box3" "box4" "box5" "box6";
+    height: 100%;
+    width: 100%;
   }
 
   .nav-bar-container{
-    max-width: 310px;
-    grid-template-rows: 150px 280px 280px 200px;
     grid-template-columns: 310px;
     grid-template-rows: "boxa" "boxb boxc" "boxd";
+    grid-template-rows: 150px 280px 280px 200px;
+    max-width: 310px;
   }
 
   .search-bar-container{
@@ -915,12 +913,12 @@ place-self: center start;
   }
 
   .box5container{
-    width: 310px;  
-    height: 700px;
-    grid-row: 7;
     grid-column: 1;
+    grid-row: 7;
+    height: 700px;
     margin: 0px;
     padding: 0px;
+    width: 310px;  
   }
 
   .box3a1container{
@@ -932,15 +930,15 @@ place-self: center start;
   }
 
    .box6container{
-    width: 310px;  
-    grid-row: 9;
     grid-column: 1;
+    grid-row: 9;
+    width: 310px;  
   }
 
   .box4container{
-    width: 310px;
     grid-template-columns: 310px;
     grid-template-rows: 1fr 1fr
+    width: 310px;
   }
 
   .box4leftcontainer{
@@ -948,6 +946,6 @@ place-self: center start;
   }
 
   .box4rightcontainer{
-    width: 100%;
     grid-row: 2;
+    width: 100%;
   }
