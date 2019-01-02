@@ -21,6 +21,7 @@
 h1{
   font-size: 18px;
   padding-left: 15px;
+  padding-bottom: 5px;
 }
 
 h3{
@@ -42,7 +43,7 @@ margin-bottom: -19px;
 }
 
 h6{
-  margin-top: -25px;
+  margin-top: -10px;
 }
 
 .box1 {
@@ -70,7 +71,10 @@ h6{
     border-top: 1px solid black;
     grid-area: boxb;
 }
-
+.open-button{
+  height: 35px;
+  width: 85px;
+}
 ul img{
   height: 1em;
 }
@@ -97,6 +101,11 @@ li h3{
   margin-left: 10px;
 }
 
+input{
+  width: 100%;
+  border-bottom: none;
+  padding-right: 0px;
+}
 .boxb1{
   margin-bottom: 5px;
 }
@@ -243,11 +252,11 @@ label h3{
 .search-bar-container{
   display: grid;
   grid-template-columns: 70px 1fr 70px 70px 70px;
+  margin: 0px;
 }
 .search-bar-container img{
   height: 34px;
   width: 34px;
-  justify-content: center;
   padding-right: 18px;
   padding-left: 18px;
   margin-top: 18px;
@@ -266,12 +275,6 @@ label h3{
   background-color: #DAF7DC;
 }
 
-.search-box2{
-  margin-right: auto;
-  padding-left: 15px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
 
 .search-box3{
   border: 1px solid gainsboro;
@@ -337,7 +340,10 @@ label h3{
 
 .box3a2{
 }
-
+.box3a3 button{
+  border-radius: 15px;
+  width: 50px;
+}
 .box3b{
 }
 .box3bcontainer{
@@ -351,6 +357,10 @@ label h3{
 
 .box4 button{
   place-self: center normal;
+  border-radius: 12px;
+  border-collapse: 1px solid gainsboro;
+  font-size: 20px;
+  background-color: #89BED9;
 }
 
 .box4container{
@@ -376,6 +386,10 @@ label h3{
   background-color: #d3dded;
   place-self: center auto;
 
+}
+.drop-down{
+  border-radius: 100%;
+  font-size: 50px;
 }
 
 .flex-wrapper {
@@ -838,10 +852,18 @@ grid-area: box5h2;
   .box4rightcontainer{
     grid-row: 2;
     height: 500px;
+    margin-top: -35px;
   }
   .box4 img{
   height: 50%;
   width: 50%;
+  }
+  .box4e{
+    place-self: center;
+    margin-top: -25px;
+  }
+  .box4d{
+    height: 0px;
   }
 
   .circular-chart {
@@ -859,6 +881,12 @@ grid-area: box5h2;
     grid-row: 4;
     grid-column: 2 /span 3;
   }
+
+  .box4e img{
+  height: 200px;
+  width: 400px;
+
+}
   
 }
 
@@ -873,13 +901,13 @@ grid-area: box5h2;
   }
   .nav-bar-container{
     max-width: 310px;
-    grid-template-rows: 150px 280px 240px 200px;
+    grid-template-rows: 150px 280px 280px 200px;
     grid-template-columns: 310px;
     grid-template-rows: "boxa" "boxb boxc" "boxd";
   }
 
   .search-bar-container{
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, 1fr);
   grid-template-rows: 1fr 1fr;
   }
   .search-box1{
@@ -909,6 +937,9 @@ grid-area: box5h2;
   margin: 0px;
   padding: 0px;
   }
+  .box3a1container{
+    grid-template-rows: 1fr 20px 10px;
+  }
   
   .box5a{
     height: 1fr;
@@ -929,6 +960,7 @@ grid-area: box5h2;
   }
 
   .box4rightcontainer{
+    width: 100%;
     grid-row: 2;
   }
   .box4gcontainer{
