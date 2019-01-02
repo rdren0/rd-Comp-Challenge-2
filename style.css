@@ -6,15 +6,21 @@
   height: 100%;
   width: 100%;
   grid-template-columns: 180px 6fr 3fr;
-  grid-template-rows: 70px 150px 500px 850px;
+  grid-template-rows: 70px 200px 500px 750px;
   grid-template-areas: "nav search search" "nav box3 box3" "nav box4 box4" "nav box5 box6"
 }
 
 .nav-bar-container{
   display: grid;
-  grid-template-rows: 1fr 2fr 2fr 6fr;
+  height: 100%;
+  grid-template-rows: 1fr 2fr 2fr 5fr;
   box-sizing: border-box;
   min-width: 155px;
+  grid-template-areas: "boxa" "boxb" "boxc" "boxd";
+}
+h1{
+  font-size: 18px;
+  padding-left: 15px;
 }
 
 h3{
@@ -25,8 +31,18 @@ h3{
 }
 
 h4{
-  margin-bottom: 5px;
-  font-size: 15px;
+  margin-bottom: -5px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+h4:hover{
+border-bottom: 2px solid black;
+margin-bottom: -19px;
+}
+
+h6{
+  margin-top: -25px;
 }
 
 .box1 {
@@ -37,6 +53,7 @@ h4{
 
 .boxa{
   margin: auto;
+  grid-area: boxa;
 }
 .boxa h3:hover{
   color: cyan;
@@ -51,6 +68,7 @@ h4{
 }
 .boxb{
     border-top: 1px solid black;
+    grid-area: boxb;
 }
 
 ul img{
@@ -89,6 +107,7 @@ li h3{
 
 .boxc{
     border-top: 1px solid black;
+    grid-area: boxc;
 }
 
 .boxccontianer{
@@ -97,6 +116,7 @@ li h3{
 }
 .boxd{
     border-top: 1px solid black;
+    grid-area: boxd;
 }
 .boxdcontianer{
   display: grid;
@@ -216,6 +236,7 @@ label h3{
   background-color: #ffffff;
   /*grid-column: 2 / -1;*/
   grid-area: search;
+  border-bottom: 2px solid gainsboro;
 
 }
 
@@ -285,18 +306,17 @@ label h3{
 
 .box3 {
   background-color: #FFFFFF;
-  border: 1px solid black;
   /*grid-column: 2 / -1;*/
     grid-area: box3;
 }
 
 .box3container{
   display: grid;
-  grid-template-rows: 2fr 1fr;
-}
+/*  grid-template-rows: 2fr 1fr;
+*/}
 .box3acontainer{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-columns: 2fr 1fr 1fr; 
 }
 
 .box3a button{
@@ -310,15 +330,19 @@ label h3{
   width: 20px;
 }
 
+.box3a1container{
+  display: grid;
+  grid-template-rows: 70px 1fr;
+}
+
 .box3a2{
-  min-width: 100px;
 }
 
 .box3b{
 }
 .box3bcontainer{
   display: grid;
-  grid-template-columns: repeat(14,minmax(50px,100px));
+  grid-template-columns: repeat(5, 1fr) 90px repeat(8, 1fr) 5fr;
 }
 .box4 {
   background-color: #d3dded;
@@ -332,10 +356,16 @@ label h3{
 .box4container{
   display: grid;
   grid-template-columns: 4fr 3fr;
-  grid-template-rows: 1fr 4fr 2fr 1fr;
-
+  grid-template-rows: 1fr;
 }
-
+.box4leftcontainer{
+  display: grid;
+  grid-template-rows: 40px 4fr 1fr;
+}
+.box4rightcontainer{
+  display: grid;
+  grid-template-rows: 40px 4fr 1fr;
+}
 .box4a{
   background-color: #d3dded;
 
@@ -344,6 +374,7 @@ label h3{
 .box4b{
   grid-row: 2;
   background-color: #d3dded;
+  place-self: center auto;
 
 }
 
@@ -360,7 +391,7 @@ label h3{
   display: block;
   margin: 10px auto;
   max-width: 80%;
-  max-height: 250px;
+  max-height: 180px;
 }
 
 .circle-bg {
@@ -429,9 +460,16 @@ label h3{
   grid-row: 4;
   grid-column: 1 / span 2;
   height: 40px;
-  border: 5px solid black;
+}
 
+.box4gcontainer{
+  display: grid;
+  grid-template-columns: 1fr 20px 1fr;
+}
 
+hr{
+ margin-left: 20px;
+ margin-right: 20px;
 }
 .box5 {
   background-color: #d3dded;
@@ -700,7 +738,7 @@ grid-area: box5h2;
 
 .box6container{
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: 200px 170px 170px 170px;
 }
 .box6acontainer{
   display: grid;
@@ -715,7 +753,7 @@ grid-area: box5h2;
   border: 1px solid black;
   height: 25px;
   font-size: 15px;
-  place-self: center auto;
+  place-self: center;
 
 }
 
@@ -723,6 +761,7 @@ grid-area: box5h2;
   display: inline-block;
   margin: 0px;
 }
+
 .social-media ul h3{
   padding-top: 20px;
   color: #2F4858 ;
@@ -742,10 +781,10 @@ grid-area: box5h2;
 .box6b{
   padding-left: 10px;
 }
-.box6bcontainer{
+.b6bcontainer{
   border-bottom: 2px solid grey;
   margin-right: 10px;
-
+  margin-left: 30px;
 }
 
 .box6b h4{
@@ -765,7 +804,6 @@ grid-area: box5h2;
   margin-right: none;
   height: 40px;
   width: 200px;
-  margin-bottom: 20px;
 }
 
 
@@ -776,6 +814,7 @@ grid-area: box5h2;
 .box6d{
   height: 100%;
    padding-left: 10px;
+   margin-left: 30px;
 }
 
 .box6d input{
@@ -783,29 +822,117 @@ grid-area: box5h2;
 }
 
 
+@media screen and (max-width: 1040px) {
+   
+  
+
+  .box4container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 300px;
+  }
+  
+  .box4leftcontainer{
+    grid-row: 1;
+  }
+
+  .box4rightcontainer{
+    grid-row: 2;
+    height: 500px;
+  }
+  .box4 img{
+  height: 50%;
+  width: 50%;
+  }
+
+  .circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 100px;
+  }
+
+  .box6container{
+    grid-row: 5;
+    grid-column: 1 /span 3;
+  }
+  .box5container{
+    grid-row: 4;
+    grid-column: 2 /span 3;
+  }
+  
+}
 
 @media screen and (max-width: 500px) {
   .container{
     display: grid;
-  height: 100%;
-  width: 100%;
-  grid-template-columns: 1fr;
-  grid-template-rows: minmax(200px, auto);
-  grid-template-areas: "." "search" "box3" "box4" "box5" "box6";
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(200px, auto);
+    grid-template-areas: "nav" "search" "box3" "box4" "box5" "box6";
   }
   .nav-bar-container{
-    display: none;
+    max-width: 310px;
+    grid-template-rows: 150px 280px 240px 200px;
+    grid-template-columns: 310px;
+    grid-template-rows: "boxa" "boxb boxc" "boxd";
   }
 
-  .box5container{
-    grid-template-rows: minmax(80px,100px);
+  .search-bar-container{
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   }
+  .search-box1{
+    margin-left: 0px;
+  }
+  .search-box2{
+    padding-left: 0px;
+  }
+  .search-box3{
+    grid-row: 2;
+  }
+  .search-box4{
+    grid-row: 2;
+  }
+  .search-box5{
+    grid-row: 2;
+  }
+  .box3bcontainer{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(15, 1fr);
+  }
+  .box5container{
+  width: 310px;  
+  height: 700px;
+  grid-row: 7;
+  grid-column: 1;
+  margin: 0px;
+  padding: 0px;
+  }
+  
   .box5a{
     height: 1fr;
   }
+   .box6container{
+  width: 310px;  
+  grid-row: 9;
+  grid-column: 1;
+  }
 
+  .box4container{
+    width: 310px;
+     grid-template-columns: 310px;
+     grid-template-rows: 1fr 1fr
+  }
+  .box4leftcontainer{
+    grid-row: 1;
+  }
 
-
+  .box4rightcontainer{
+    grid-row: 2;
+  }
+  .box4gcontainer{
+  }
   
 
   
