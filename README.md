@@ -16,6 +16,7 @@ Here is the design we were asked to recreate:
 ![rd-Comp-Challenge-2](iStaticComp2.jpg)
 
 ## My Product
+I still have a ways to go before a final product
 ![rd-Comp-Challenge-2](Screen Shot 2019-01-06 at 17.04.02.png)
 
 
